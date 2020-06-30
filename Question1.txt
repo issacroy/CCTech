@@ -1,0 +1,99 @@
+package practises;
+
+import java.util.Scanner;
+
+public class Cctech {
+
+	public static void main(String[] args) {
+		int[][] mypolygon = { { 1, 3 }, { 2, 7 }, { 3, 4 }, { 4, 1 }, { 4, 9 }, { 5, 5 }, { 5, 8 }, { 6, 2 }, { 8, 10 },
+				{ 9, 6 } };
+		// int [][] mypoint = {{1,1}};
+
+		int x = 1;
+		int y = 7;
+		int Xlarge = mypolygon[0][0], Xmin = mypolygon[0][0], Ylarge = mypolygon[0][0], Ymin = mypolygon[0][0];
+
+		for (int i = 0; i <= 9; i++) {
+			if (mypolygon[i][0] > Xlarge)
+				Xlarge = mypolygon[i][0];
+
+			if (mypolygon[i][0] < Xmin)
+				Xmin = mypolygon[i][0];
+
+				if (mypolygon[i][j] > Ylarge)
+					Ylarge = mypolygon[i][1];
+
+				if (mypolygon[i][j] < Ymin)
+					Ymin = mypolygon[i][1];
+			
+		}
+
+		System.out.println("Xlarge=" + Xlarge);
+		System.out.println("Xmin=" + Xmin);
+		System.out.println("Ylarge=" + Ylarge);
+		System.out.println("Ymin=" + Ymin);
+		System.out.println("x=" + x);
+		System.out.println("y=" + y);
+		if (x >= Xmin && x <= Xlarge) {
+			if (y >= Ymin && y <= Ylarge) {
+				System.out.println("true");
+			} else {
+				System.out.println("false");
+			}
+		} else {
+			System.out.println("false");
+		}
+	}
+
+}
+
+
+
+package practises;
+
+import java.util.Scanner;
+
+public class Cctech {
+
+	public static void main(String[] args) {
+		int[][] mypolygon = { {1,4},{2,1},{3,3},{5,5},{6,2}};
+		// int [][] mypoint = {{1,1}};
+
+		int x = 1;
+		int y = 5;
+		int Xlarge = mypolygon[0][0], Xmin = mypolygon[0][0], Ylarge = mypolygon[0][0], Ymin = mypolygon[0][0];
+
+		for (int i = 0; i <= 4; i++) {
+			if (mypolygon[i][0] > Xlarge)
+				Xlarge = mypolygon[i][0];
+
+			if (mypolygon[i][0] < Xmin)
+				Xmin = mypolygon[i][0];
+
+				if (mypolygon[i][1] > Ylarge)
+					Ylarge = mypolygon[i][1];
+
+				if (mypolygon[i][1] < Ymin)
+					Ymin = mypolygon[i][1];
+
+		}
+
+		System.out.println("Xlarge=" + Xlarge);
+		System.out.println("Xmin=" + Xmin);
+		System.out.println("Ylarge=" + Ylarge);
+		System.out.println("Ymin=" + Ymin);
+		System.out.println("x=" + x);
+		System.out.println("y=" + y);
+		if (x >= Xmin && x <= Xlarge) {
+			if (y >= Ymin && y <= Ylarge) {
+				System.out.println("true");
+			} else {
+				System.out.println("false");
+			}
+		} else {
+			System.out.println("false");
+		}
+	}
+
+}
+
